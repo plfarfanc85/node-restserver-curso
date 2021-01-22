@@ -12,7 +12,7 @@ let verificarToken = (req, res, next) => {
       return res.status(400).json({
         ok: false,
         err: {
-          message: "Token no valido",
+          message: "Token no valido o no se ha enviado token",
         },
       });
     }
